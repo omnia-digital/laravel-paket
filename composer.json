@@ -1,5 +1,5 @@
 {
-    "name": "cybercog/laravel-paket",
+    "name": "omnia-digital/laravel-paket",
     "description": "Composer personal web interface. Manage Laravel dependencies without switching to command line!",
     "type": "library",
     "license": "MIT",
@@ -40,6 +40,8 @@
     "require": {
         "php": "^8.1 | ^8.2",
         "ext-json": "*",
+        "graham-campbell/github": "^12.2",
+        "illuminate/contracts": "^9.0|^10.0",
         "illuminate/support": "^9.0|^10.0",
         "mcstreetguy/composer-parser": "^1.1"
     },
@@ -63,7 +65,12 @@
         "test": "vendor/bin/phpunit"
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
     },
     "extra": {
         "laravel": {

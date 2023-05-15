@@ -36,7 +36,7 @@ return [
     |
     */
 
-    'composer_path' => env('PAKET_COMPOSER_PATH', '/usr/bin/composer'),
+    'composer_path' => env('PAKET_COMPOSER_PATH', '/opt/homebrew/bin/composer'),
 
     /*
     |--------------------------------------------------------------------------
